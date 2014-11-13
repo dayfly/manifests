@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!--  Tilapia / Grouper -->
-  <project name="temasek/android_device_asus_tilapia" path="device/asus/tilapia" remote="github" revision="cm-11.0" />
-  <remote fetch="https://github.com/TheMuppets/" name="TheMuppets" review="http://review.cyanogenmod.org/" />
-  <project name="proprietary_vendor_asus" path="vendor/asus" remote="TheMuppets" revision="cm-11.0" />
-  <project name="proprietary_vendor_broadcom" path="vendor/broadcom" remote="TheMuppets" revision="cm-11.0" />
-  <project name="proprietary_vendor_elan" path="vendor/elan" remote="TheMuppets" revision="cm-11.0" />
-  <project name="proprietary_vendor_invensense" path="vendor/invensense" remote="TheMuppets" revision="cm-11.0" />
-  <project name="proprietary_vendor_nvidia" path="vendor/nvidia" remote="TheMuppets" revision="cm-11.0" />
-  <project name="proprietary_vendor_nxp" path="vendor/nxp" remote="TheMuppets" revision="cm-11.0" />
-  <project name="proprietary_vendor_widevine" path="vendor/widevine" remote="TheMuppets" revision="cm-11.0" />
-  <project name="temasek/android_device_asus_grouper" path="device/asus/grouper" remote="github" revision="cm-11.0" />
-  <project name="temasek/android_kernel_asus_grouper" path="kernel/asus/grouper" remote="github" revision="cm-11.0" />
-
-  <!-- i9300 -->
-  <project name="temasek/android_device_samsung_smdk4412-common/" path="device/samsung/smdk4412-common" remote="github" revision="cm-11.0" />
-  <project name="temasek/android_device_samsung_i9300/" path="device/samsung/i9300" remote="github" revision="cm-11.0" />
-  <project name="temasek/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="cm-11.0" />
-
   <!-- hlte -->
   <project name="temasek/android_device_samsung_hlte/" path="device/samsung/hlte" remote="github" revision="cm-11.0" />
   <project name="temasek/android_device_samsung_hltespr/" path="device/samsung/hltespr" remote="github" revision="cm-11.0" />
@@ -36,7 +18,7 @@
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <project name="temasek/android_hardware_qcom_gps/" path="hardware/qcom/gps" remote="github" revision="cm-11.0" />
 
-  <!-- Samsung, needed for i9300 / hlte -->
+  <!-- Samsung, needed hlte -->
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-11.0" />
   <project name="temasek/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-11.0" />
 
@@ -166,7 +148,7 @@
   <project name="temasek/android_bootable_recovery-philz/" path="bootable/recovery-philz" remote="github" revision="cm-11.0" />
 
   <!-- TOOLCHAIN -->
-  <project name="temasek/sm-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bitbucket" revision="master" />
-  <project name="temasek/sm-arm-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="bitbucket" revision="master" />
+  <project name="temasek/sm-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="master" />
+  <project name="temasek/sm-arm-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="master" />
 
 </manifest>
